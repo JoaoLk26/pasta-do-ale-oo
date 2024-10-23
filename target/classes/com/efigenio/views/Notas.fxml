@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.efigenio.controllers.NotasController?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.efigenio.controllers.NotasController">
+    <!-- Conteúdo da tela -->
+</AnchorPane>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.efigenio.controllers.NotasController"
+          xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8"
+          hgap="10" vgap="10"
+          alignment="CENTER">
+
+    <Label text="Nota 1" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="nota1Field" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Nota 2" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="nota2Field" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Nota 3" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="nota3Field" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Nota 4" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="nota4Field" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Button text="Salvar" onAction="#salvarNotas" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    
+</GridPane>

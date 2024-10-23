@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.efigenio.controllers.CadastroAlunoController"
+          xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8"
+          hgap="10" vgap="10"
+          alignment="CENTER">
+
+    <Label text="Nome" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="nomeField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Nascimento" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="nascimentoField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="CPF" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="cpfField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Email" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="emailField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Button text="Salvar" onAction="#salvarAluno" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+</GridPane>

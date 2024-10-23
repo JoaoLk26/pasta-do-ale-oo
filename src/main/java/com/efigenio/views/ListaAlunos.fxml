@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="com.efigenio.controllers.ListaAlunosController"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10" alignment="CENTER">
+
+    <Label text="Lista de Alunos" style="-fx-font-size: 16px;"/>
+
+    <ListView fx:id="listaAlunos" prefHeight="200" prefWidth="300"/>
+
+    <Button text="Adicionar Aluno" onAction="#adicionarAluno"/>
+    <Button text="Excluir Aluno" onAction="#excluirAluno"/>
+
+</VBox>
